@@ -1,0 +1,45 @@
+# 🚗 Aplikasi Pemesanan Kendaraan - Technical Test Engineer Lead
+
+Aplikasi ini digunakan untuk mendata pegawai.
+
+---
+
+## 💻 Tech Spec
+- Laravel 12
+- PHP 8.3
+- SQL Lite
+- Bootstrap 5
+
+## ⚙️ Instalasi
+
+1. Clone repository:
+    ```bash
+    git clone <url>
+    cd employee-app
+    ```
+2. composer install
+3. cp .env.example .env
+4. php artisan key:generate
+5. php artisan migrate
+6. php artisan db:seed
+7. php artisan serve
+
+## 📊 ER Diagram
+users
+- id (PK)
+- name
+- email
+- password
+- position_id (FK)
+- department_id (FK)
+- hire_date
+
+Divisions
+- id (PK)
+- name
+
+Positions
+- id (PK)
+- name 
+
+
