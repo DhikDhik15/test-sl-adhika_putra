@@ -14,6 +14,7 @@
             <th>Nama</th>
             <th>Email</th>
             <th>Jabatan</th>
+            <th>Alamat</th>
             <th>Divisi</th>
             <th>Tanggal Masuk</th>
             <th>Aksi</th>
@@ -25,6 +26,7 @@
             <td>{{ $employee->name }}</td>
             <td>{{ $employee->email }}</td>
             <td>{{ $employee->position->name }}</td>
+            <td>{{ $employee->address == null ? 'Alamat Kosong' : $employee->address }}</td>
             <td>{{ $employee->division->name }}</td>
             <td>{{ $employee->hire_date }}</td>
             <td>
